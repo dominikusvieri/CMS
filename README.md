@@ -14,10 +14,8 @@ Gunakan akun berikut untuk login:
 
 ```
 Email    : admin@mail.com
-Password : admin123
+Password : 123456
 ```
-
-> Data user dimock menggunakan MSW dan disimpan di memory browser.
 
 ---
 
@@ -80,48 +78,6 @@ Semua operasi CRUD dilakukan via **postService → postApi → MSW handler**.
 
 ---
 
-## 🧩 Komponen & Struktur Utama
-
-```
-src/
-├─ layouts/
-│  ├─ RootLayout.tsx
-│  ├─ ProtectedLayout.tsx
-│  └─ DashboardLayout.tsx
-│
-├─ pages/
-│  ├─ Login.tsx
-│  ├─ Dashboard.tsx
-│  ├─ Post.tsx
-│  ├─ PostCreate.tsx
-│  ├─ PostEdit.tsx
-│  └─ PostDetail.tsx
-│
-├─ services/
-│  ├─ auth.api.ts
-│  ├─ auth.service.ts
-│  ├─ post.api.ts
-│  └─ post.service.ts
-│
-├─ store/
-│  └─ auth.store.ts
-│
-├─ mocks/
-│  ├─ handlers/
-│  │  ├─ auth.handler.ts
-│  │  └─ post.handler.ts
-│  └─ browser.ts
-│
-├─ types/
-│  ├─ auth.ts
-│  └─ post.ts
-│
-└─ router/
-   └─ index.tsx
-```
-
----
-
 ## 🔄 Authentication Flow
 
 ```
@@ -151,15 +107,7 @@ npm run dev
 
 MSW akan otomatis aktif di mode development.
 
----
 
-## 📎 Catatan
-
-* Project ini **tidak menggunakan backend real**
-* Seluruh data hanya hidup di memory browser
-* Cocok untuk demo, testing, dan portofolio frontend
-
----
 
 ## 👨‍💻 Author
 
@@ -167,6 +115,3 @@ Dominikus Vieri Tegar Linestyo
 
 Frontend Developer
 
----
-
-Jika ingin versi dengan backend real (NestJS / Express) atau deployment, silakan hubungi 👋
