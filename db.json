@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@mail.com",
+      "password": "admin123",
+      "name": "Admin CMS",
+      "token": "fake-jwt-token"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "React Basic",
+      "content": "Learn React",
+      "language": "en",
+      "status": "published"
+    },
+    {
+      "id": 2,
+      "title": "Vue Guide",
+      "content": "Vue tutorial",
+      "language": "id",
+      "status": "draft"
+    }
+  ]
+}
